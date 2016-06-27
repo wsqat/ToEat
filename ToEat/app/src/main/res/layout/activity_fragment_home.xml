@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.toeat.fragment.FragmentHome">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:text="@string/tab_item_home"
+        android:background="#FF0000"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />-->
+
+    <!-- 主题图片 -->
+<!--    <com.toeat.util.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true" />-->
+
+
+    <!--listView-->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_marginTop="180dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</FrameLayout>

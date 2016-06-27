@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	">
+	<!-- Video bean的id即为strut的action的class-->
+	<!-- Add -->
+	<bean id="VideoAddAction" class="com.toeat.action.video.VideoAddAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	<!-- Delete -->
+	<bean id="VideoDeleteAction" class="com.toeat.action.video.VideoDeleteAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	<!-- Update -->
+	<bean id="VideoUpdateAction" class="com.toeat.action.video.VideoUpdateAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	<!-- Read All -->
+	<bean id="VideoReadAllAction" class="com.toeat.action.video.VideoReadAllAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	<!-- Read By ID -->
+	<bean id="VideoReadByIDAction" class="com.toeat.action.video.VideoReadByIDAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	<!-- VideoReadLimitedByOrderAction -->
+	<bean id="VideoReadLimitedByOrderAction" class="com.toeat.action.video.VideoReadLimitedByOrderAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	<!-- 查询所有视频信息 -->
+	<bean id="QueryVideosAction" class="com.toeat.action.video.QueryVideosAction">
+		<property name="baseService" ref="BaseService"></property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,17 @@
+#svw_footer_wrapper {
+	width: 100%;
+	background: #181818;
+}
+
+#svw_footer {
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+
+#svw_footer a {
+	color: #337ab7;
+	text-decoration:none;
+	font-family: 'Microsoft YaHei', 宋体, Tahoma, Helvetica, Arial, 宋体, sans-serif;	
+}

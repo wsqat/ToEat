@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- Shop-->        
+<struts>
+	<!-- 商城 -->
+	<package name="shop" namespace="/" extends="struts-default">
+		<!-- android 注册-->
+		<!-- <action name="ClientRegister" class="LoginAction" method="register">
+		</action> -->
+	
+		<!-- 查询所有商品分类信息 -->
+		<action name="QueryGoodCates" class="QueryGoodCatesAction"></action>
+    </package>
+</struts>

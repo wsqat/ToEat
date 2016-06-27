@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.toeat.lesson.LessonDisplayActivity">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.toeat.fragment.FragmentHome"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" />
+
+
+
+    <fragment
+        android:id="@+id/fragment_category"
+        android:name="com.toeat.fragment.FragmentCategory"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_down"
+        android:name="com.toeat.fragment.FragmentDown"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_user"
+        android:name="com.toeat.fragment.FragmentUser"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_setting"
+        android:name="com.toeat.fragment.FragmentSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1" />
+
+    <com.toeat.fragment.ViewIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.toeat.fragment.ViewIndicator>
+
+</LinearLayout>

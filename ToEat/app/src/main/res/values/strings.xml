@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">金药食</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="enter">直接进入</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">请输入昵称</string>
+    <string name="prompt_phone">请输入手机号</string>
+    <string name="prompt_email">请输入登录邮箱</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_login">登录</string>
+    <string name="action_register">注册</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+
+    <!--fragment-->
+    <string name="tab_item_home">"主页"</string>
+    <string name="tab_item_category">"分类"</string>
+    <string name="tab_item_down">"下载"</string>
+    <string name="tab_item_user">"我的"</string>
+    <string name="tab_item_setting">"设置"</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.custom.i18n.resources" value="message"/>
+    <include file="struts-default.xml"/>
+    
+    <!-- 文件上传大小限制 （默认2M，太小）-->
+	<constant name="struts.multipart.maxSize" value="1000000000"/>
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+	<!-- 包含配置文件 -->
+	<include file="struts/struts-user.xml"/>
+	<include file="struts/struts-video.xml"/>
+	<include file="struts/struts-configure.xml"/>
+	<include file="struts/struts-page.xml"/>
+	<include file="struts/struts-dispatcher.xml"/>
+	<include file="struts/struts-article.xml"/>
+	<include file="struts/struts-shop.xml"/>
+	
+</struts>    

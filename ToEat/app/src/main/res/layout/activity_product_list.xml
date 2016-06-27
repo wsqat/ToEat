@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.toeat.shop.ProductListActivity">
+
+<RelativeLayout
+    android:id="@+id/relative_layout_product_list"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorTransparent">
+
+    <EditText
+        android:id="@+id/search_product_list"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/ic_search_view"/>
+
+    <Button
+        android:id="@+id/button_search_product_list"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/search_product_list"
+        android:background="@color/colorPrimary"
+        android:text="搜索"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+
+<ListView
+    android:id="@+id/listview_product_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relative_layout_product_list"/>
+
+</RelativeLayout>
+

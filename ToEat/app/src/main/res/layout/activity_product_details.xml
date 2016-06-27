@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.toeat.shop.ProductDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--<Button
+            android:id="@+id/back_product_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="商品详情"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:theme="@style/AlertDialog.AppCompat"
+            android:layout_marginLeft="120dp"
+            android:layout_weight="1.02" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/product_ex"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="价格:"/>
+    <TextView
+        android:id="@+id/product_sprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:text="￥188.00:"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="描述:"/>
+        <TextView
+            android:id="@+id/product_sdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:text="性甘、微苦、微温；含有人参素，人参副素、钙质、镁质、皂素，可安神养心。" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_into_car"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加入购物车"
+        android:layout_marginTop="26dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/shape"/>
+    />
+
+</LinearLayout>

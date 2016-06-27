@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- User-->        
+<struts>
+		<!-- 登录 -->
+	<package name="login" namespace="/" extends="struts-default">
+		<!-- server 登录-->
+    	<action name="Login" class="LoginAction">
+			<result name="success" type="redirect">/in.jsp</result>
+			<result name="error" type="redirect">/error.jsp</result>
+		</action>
+		<!-- server 注销 -->
+		<action name="Logout" class="LoginAction" method="logout">
+			<result name="success" type="redirect">/in.jsp</result>
+			<result name="error" type="redirect">/error.jsp</result>
+		</action>
+		<!-- android 登录-->
+		<action name="ClientLogin" class="LoginAction" method="checkLogin">
+		</action>
+		<!-- android 注册-->
+		<action name="ClientRegister" class="LoginAction" method="register">
+		</action>
+		<!-- 查询所有用户信息 -->
+		<action name="QueryUsers" class="QueryUsersAction"></action>
+    </package>
+</struts>

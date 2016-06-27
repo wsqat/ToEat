@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.toeat.fragment.FragmentCategory">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorTransparent">
+
+            <EditText
+                android:id="@+id/editText_fragment_categray"
+                android:layout_width="200dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/ic_search_view" />
+
+            <Button
+                android:id="@+id/searchButton_fragment_categray"
+                android:layout_width="68dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/editText_fragment_categray"
+                android:background="@color/colorPrimary"
+                android:text="搜索"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ScrollView
+                android:id="@+id/scrollview_top_category"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:fillViewport="false">
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/scrollview_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="512dp"
+                android:fillViewport="false">
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

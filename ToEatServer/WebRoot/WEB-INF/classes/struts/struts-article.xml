@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- User-->        
+<struts>
+		<!-- 文章 -->
+	<package name="article" namespace="/" extends="struts-default">
+		<!-- 图片上传 -->
+		<action name="Uploadfile" class="CkeditorUploadAction"></action>
+		<!-- 添加-->
+    	<action name="ArticleAddPage">
+    		<result type="dispatcher">/article/articleEdit.jsp</result>
+    	</action>
+    	<action name="ArticleAdd" class="ArticleAction" method="Add">
+    		<!-- <result name="success">/success.jsp</result> -->
+    		<result name="success" type="redirectAction">ArticleReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<!-- 添加评论 -->
+    	<action name="CommentAdd" class="CommentAction" method="Add">
+    		<!-- <result name="success">/success.jsp</result> -->
+    		<result name="success" type="redirectAction">ArticleReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	
+    	<!-- 删除评论 -->
+    	<action name="CommentDelete" class="CommentAction" method="Delete">
+    		<!-- <result name="success">/success.jsp</result> -->
+    		<result name="success" type="redirectAction">ArticleReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	
+    	<!-- 删除 -->
+    	<action name="ArticleDelete" class="ArticleAction" method="Delete">
+    		<result name="success" type="redirectAction">ArticleReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<!-- 修改 -->
+    	<action name="ArticleUpdateRead" class="ArticleUpdateAction" method="Read">
+    		<result name="success">/article/articleEdit.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	<action name="ArticleUpdateUpdate" class="ArticleUpdateAction" method="Update">
+    		<result name="success" type="redirectAction">ArticleReadAll</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+		<!-- Read By ID -->
+    	<action name="ArticleReadByID" class="ArticleReadByIdAction">
+    		<result name="success">/article/articleContent.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+    	
+    	
+		<!-- 列表读取所有 -->
+    	<action name="ArticleReadAll" class="ArticleReadAllAction">
+    		<result name="success">/article/articleList.jsp</result>
+    		<result name="error">/error.jsp</result>
+    	</action>
+		
+		
+		<!-- 查询所有文章信息 -->
+		<action name="QueryArticles" class="QueryArticlesAction"></action>
+    </package>
+</struts>
